@@ -57,13 +57,15 @@ tabs.forEach((tab) => {
 		const target = document.querySelector(tab.dataset.target);
 
 		tabContents.forEach((tabContent) => {
-			tabContent.ClassList.remove('qualification__active');
+			tabContent.classList.remove('qualification__active');
 		});
-		target.ClassList.add('qualification__active');
+
+		target.classList.add('qualification__active');
 
 		tabs.forEach((tab) => {
 			tab.classList.remove('qualification__active');
 		});
+
 		tab.classList.add('qualification__active');
 	});
 });
@@ -94,7 +96,7 @@ modalCloses.forEach((modalClose) => {
 let swiper = new Swiper('.portfolio__container', {
 	cssMode: true,
 	loop: true,
-	
+
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',

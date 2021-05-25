@@ -561,7 +561,7 @@ img {
 }
 
 .qualification__calendar {
-	font-size: var(--small-font-size);
+	font-size: var(--smaller-font-size);
 	color: var(--text-color-light);
 }
 
@@ -689,7 +689,7 @@ img {
 /* Active Modal */
 .active-modal {
 	opacity: 1;
-	visibility: hidden;
+	visibility: visible;
 }
 
 /*==================== PORTFOLIO ====================*/
