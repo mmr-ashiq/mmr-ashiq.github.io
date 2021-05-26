@@ -279,6 +279,59 @@ img {
 	padding-top: 3.5rem;
 	align-items: center;
 }
+/* 
+.home__wrapper{
+	display: inline-flex;
+}
+
+.home__wrapper .static-txt {
+	font-size: var(--h3-font-size);
+	font-weight: 400;
+
+}
+
+.home__wrapper .dynamic-txts{
+	margin-left: 15px;
+	height: 27px;
+	line-height: 30px;
+	background:rgba(238, 118, 222, 0.15);
+	overflow: hidden;
+}
+
+.dynamic-txts li{
+	color: var(--first-color);
+	list-style: none;
+	font-size: var(--h3-font-size);
+	font-weight: 500;
+	position: relative;
+	top: 0;
+	animation: slide 6s steps(3) infinite;
+}
+
+
+
+.dynamic-txts li span{
+	position: relative;
+}
+
+.dynamic-txts li span::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--body-color);
+	border-left: 2px solid var(--first-color);
+	animation: typing 2s steps(10) infinite;
+}
+
+@keyframes typing{
+	100%{
+		left: 100%;
+		margin: 0 -35px 0 35px;
+	}
+}
+ */
 
 .home__social {
 	display: grid;
@@ -662,7 +715,7 @@ img {
 	row-gap: 1rem;
 }
 
-.services__modal-services {
+.services__modal-service {
 	display: flex;
 }
 
@@ -754,28 +807,10 @@ img {
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
 	row-gap: 3rem;
-}
-
-.contact__infomation {
-	display: flex;
-	margin-bottom: var(--mb-2);
-}
-
-.contact__icon {
-	font-size: 2rem;
-	color: var(--first-color);
-	margin-right: var(--mb-0-75);
-}
-
-.contact__title {
-	font-size: var(--h3-font-size);
-	font-weight: var(--font-medium);
-}
-
-.contact__subtitle {
-	font-size: var(--small-font-size);
-	color: var(--text-color-light);
 }
 
 .contact__content {
@@ -784,7 +819,7 @@ img {
 	padding: 0.75rem 1rem 0.25rem;
 }
 
-.contact__level {
+.contact__label {
 	font-size: var(--small-font-size);
 	color: var(--title-color);
 }
@@ -814,7 +849,7 @@ img {
 	padding: 1rem 0 0.25rem;
 }
 
-.footer.title {
+.footer__title {
 	font-size: var(--h2-font-size);
 	margin-bottom: var(--mb-0-25);
 }
@@ -823,13 +858,13 @@ img {
 	font-size: var(--small-font-size);
 }
 
-.footer.links {
+.footer__links {
 	display: flex;
 	flex-direction: column;
 	row-gap: 1.5rem;
 }
 
-.footer.links:hover {
+.footer__links:hover {
 	columns: var(--first-color-lighter);
 }
 
@@ -942,26 +977,6 @@ img {
 	.services__modal {
 		padding-right: 0.5rem;
 	}
-
-	.project__img {
-		width: 200px;
-	}
-
-	.testimonial__data,
-	.testimonial__header {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.testimonial__image {
-		margin-right: 0;
-		margin-bottom: var(--mb-0-25);
-	}
-
-	.testimonial__data,
-	.testimonial__description {
-		text-align: center;
-	}
 }
 
 /* For medium devices */
@@ -981,8 +996,7 @@ img {
 
 	.about__container,
 	.skills__container,
-	.portfolio__container,
-	.project__container,
+	.portfolio__content,
 	.contact__container,
 	.footer__container {
 		grid-template-columns: repeat(2, 1fr);
@@ -1118,26 +1132,6 @@ img {
 		align-items: center;
 	}
 
-	.project {
-		text-align: initial;
-	}
-
-	.project__bg {
-		background: none;
-	}
-
-	.project__container {
-		background-color: var(--first-color-second);
-		border-radius: 1rem;
-		padding: 3rem 2.5rem 0;
-		grid-template-columns: 1fr max-content;
-		column-gap: 3rem;
-	}
-
-	.project__data {
-		padding-top: 0.8rem;
-	}
-
 	.footer__container {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -1152,13 +1146,13 @@ img {
 	}
 
 	.footer__socials {
-		justify-content: flex-end;
+		justify-self: flex-end;
 	}
 
 	.footer__copy {
 		margin-top: 4.5rem;
 	}
-} 
+}
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
@@ -1173,7 +1167,8 @@ img {
 	}
 
 	.home__social {
-		transform: translateX(-6rem);
+		transform: translateX(-1rem);
+		/* transform: translateX(-6.5rem); */
 	}
 
 	.services__container {
@@ -1201,10 +1196,126 @@ img {
 	}
 
 	.contact__form {
-		width: 460px;
+		width: 600px;
 	}
 
 	.contact__inputs {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
+
+/* intro-images animation */
+/* .intro-images {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 40rem;
+	flex: 1 1 40rem;
+}
+
+#plant-left {
+	-webkit-animation: plant 1.5s ease infinite alternate;
+	animation: plant 1.5s ease infinite alternate;
+}
+
+#plant-right {
+	-webkit-animation: plant 1.5s ease infinite alternate 0.5s;
+	animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+#me {
+	-webkit-animation: me 1s ease infinite alternate;
+	animation: me 1s ease infinite alternate;
+	-webkit-transform-origin: bottom;
+	transform-origin: bottom;
+}
+
+#clock-arrow {
+	-webkit-animation: clock 1.5s infinite linear;
+	animation: clock 1.5s infinite linear;
+	transform-box: fill-box;
+	-webkit-transform-origin: bottom;
+	transform-origin: bottom;
+}
+
+@-webkit-keyframes me {
+	from {
+		-webkit-transform: rotateZ(-5deg);
+		transform: rotateZ(-5deg);
+	}
+	to {
+		-webkit-transform: rotateZ(5deg);
+		transform: rotateZ(5deg);
+	}
+}
+
+@keyframes me {
+	from {
+		-webkit-transform: rotateZ(-5deg);
+		transform: rotateZ(-5deg);
+	}
+	to {
+		-webkit-transform: rotateZ(5deg);
+		transform: rotateZ(5deg);
+	}
+}
+
+@-webkit-keyframes plant {
+	from {
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+	to {
+		-webkit-transform: translateY(-30%);
+		transform: translateY(-30%);
+	}
+}
+
+@keyframes plant {
+	from {
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+	to {
+		-webkit-transform: translateY(-30%);
+		transform: translateY(-30%);
+	}
+}
+
+@-webkit-keyframes clock {
+	from {
+		-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+	to {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes clock {
+	from {
+		-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+	to {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+@media screen and (max-width: 1332px) {
+	.splash {
+		display: none;
+	}
+	svg {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 754px) {
+	svg {
+		height: 60%;
+	}
+	.intro-images {
+		text-align: center;
+	}
+} */
