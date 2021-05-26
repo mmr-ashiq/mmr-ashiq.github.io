@@ -185,3 +185,54 @@ themeButton.addEventListener('click', () => {
 	localStorage.setItem('selected-theme', getCurrentTheme());
 	localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+
+//typeWritter effect
+const textDisplay = document.getElementById("text")
+const phrases = ['MERN Stack Developer', 'Open Source Enthusiast', 'Backend fanatic']
+
+let i = 0
+let j = 0
+let currentPhrase = []
+let isDeleting = false
+let isEnd = false
+
+function loop(){
+	isEnd = false
+	textDisplay.innerHTML = currentPhrase.join('')
+
+	if(i < phrases.length){
+
+		if(!isDeleting && j <= phrases[i].length){
+			
+			currentPhrase.push(phrases[i][j])
+			j++
+			textDisplay.innerHTML = currentPhrase.join('')
+		}
+
+		if(isDeleting && j <= phrases[i].length){
+			currentPhrase.pop(phrases[i][j])
+			j--
+			textDisplay.innerHTML = currentPhrase.join('')
+			}
+
+		if(j == phrases[i].length){
+			isEnd = true
+			isDeleting = true		
+		}
+		if(isDeleting && j === 0){
+			currentPrase = []
+			isDeleting = false
+			i++
+			if(i == phrases.length)
+				i = 0
+		}
+	}
+	const speedUp = Math.random() * (49 -50) + 20
+	const normalSpeed = Math.random() * (300 -200) + 50
+	const time = isEnd ? 350 : isDeleting ? speedUp : normalSpeed
+	setTimeout(loop,time)
+
+}
+
+loop()
