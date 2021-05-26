@@ -807,10 +807,11 @@ img {
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
-	/* display: flex;
+	/* row-gap: 3rem; */
+	display:flex;
 	justify-content: center;
-	align-items: center; */
-	row-gap: 3rem;
+	align-items: center;
+	
 }
 
 .contact__content {
