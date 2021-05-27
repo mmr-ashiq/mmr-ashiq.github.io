@@ -369,7 +369,7 @@ img {
 	justify-self: center;
 	align-self: center;
 	filter: grayscale(100%);
-	border: 3px solid #45eead;
+	border: 3px solid #ff80ab;
 	overflow: hidden;
 }
 
@@ -755,10 +755,9 @@ img {
 /*==================== CONTACT ME ====================*/
 .contact__container {
 	/* row-gap: 3rem; */
-	display:flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 }
 
 .contact__content {
