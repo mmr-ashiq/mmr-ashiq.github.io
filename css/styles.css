@@ -70,15 +70,17 @@
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-	--hue-color: 230;
+	--hue-color: 166;
 	/* HSL color mode */
-	--first-color-second: hsl(var(--hue-color), 30%, 8%);
+	--first-color: hsl(var(--hue-color), 100%, 70%);
+	--first-color-second:   #004d40 ;
+	--first-color-alt:  #b388ff ;
 	--title-color: hsl(var(--hue-color), 8%, 95%);
-	--text-color: hsl(var(--hue-color), 8%, 75%);
+	--text-color:  #fafafa ;
 	--input-color: hsl(var(--hue-color), 29%, 16%);
-	--body-color: hsl(var(--hue-color), 28%, 16%);
+	--body-color:   #212121;
 	--container-color: hsl(var(--hue-color), 29%, 16%);
-	--scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+	--scroll-bar-color:  #bdbdbd;
 	--scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
@@ -298,7 +300,7 @@ img {
 .home__blob {
 	width: 200px;
 	/* fill: var(--first-color); */
-	fill: #b2dfdb  ;
+	fill: #b2dfdb;
 }
 
 .home__blob-img {
@@ -370,7 +372,7 @@ img {
 	justify-self: center;
 	align-self: center;
 	filter: grayscale(100%);
-	border: 3px solid #b2dfdb ;
+	border: 3px solid #b2dfdb;
 	overflow: hidden;
 }
 
