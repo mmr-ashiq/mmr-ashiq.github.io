@@ -6,10 +6,10 @@
 	--header-height: 3rem;
 
 	/*========== Colors ==========*/
-	--hue-color: 340; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+	--hue-color: 265; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
 	/* HSL color mode */
-	--first-color: hsl(var(--hue-color), 69%, 61%);
+	--first-color: hsl(var(--hue-color), 100%, 46%);
 	--first-color-second: hsl(var(--hue-color), 69%, 61%);
 	--first-color-alt: hsl(var(--hue-color), 57%, 53%);
 	--first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -279,59 +279,6 @@ img {
 	padding-top: 3.5rem;
 	align-items: center;
 }
-/* 
-.home__wrapper{
-	display: inline-flex;
-}
-
-.home__wrapper .static-txt {
-	font-size: var(--h3-font-size);
-	font-weight: 400;
-
-}
-
-.home__wrapper .dynamic-txts{
-	margin-left: 15px;
-	height: 27px;
-	line-height: 30px;
-	background:rgba(238, 118, 222, 0.15);
-	overflow: hidden;
-}
-
-.dynamic-txts li{
-	color: var(--first-color);
-	list-style: none;
-	font-size: var(--h3-font-size);
-	font-weight: 500;
-	position: relative;
-	top: 0;
-	animation: slide 6s steps(3) infinite;
-}
-
-
-
-.dynamic-txts li span{
-	position: relative;
-}
-
-.dynamic-txts li span::after{
-	content: "";
-	position: absolute;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: var(--body-color);
-	border-left: 2px solid var(--first-color);
-	animation: typing 2s steps(10) infinite;
-}
-
-@keyframes typing{
-	100%{
-		left: 100%;
-		margin: 0 -35px 0 35px;
-	}
-}
- */
 
 .home__social {
 	display: grid;
