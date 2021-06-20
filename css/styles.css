@@ -372,14 +372,14 @@ img {
 	justify-self: center;
 	align-self: center;
 	filter: grayscale(100%);
-	border: 3px solid #b2dfdb;
+	border: 3px solid rgb(32, 224, 224);
 	overflow: hidden;
 }
 
 .about__img:hover {
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	transition: all 0.5s ease;
 	transform: scale(1.02);
+	transition: transform 0.5s ease;
 	filter: grayscale(0);
 }
 
