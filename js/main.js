@@ -189,7 +189,7 @@ themeButton.addEventListener('click', () => {
 
 //typeWritter effect
 const textDisplay = document.getElementById("text")
-const phrases = ['MERN Stack Developer', 'Open Source Enthusiast', 'Backend fanatic ❤️']
+const phrases = ['MERN Stack Developer', 'Open Source Enthusiast', 'Backend fanatic']
 
 let i = 0
 let j = 0
