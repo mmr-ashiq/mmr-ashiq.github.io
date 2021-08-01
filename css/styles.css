@@ -1,5 +1,7 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Quando);
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -312,6 +314,7 @@ img {
 }
 
 .home__title {
+	margin-bottom: 20px;
 	font-size: var(--big-font-size);
 }
 
@@ -319,10 +322,6 @@ img {
 	font-size: var(--h3-font-size);
 	color: var(--text-color);
 	font-weight: var(--mb-0-75);
-}
-
-.home__description {
-	margin-bottom: var(--mb-2);
 }
 
 /*==================== BUTTONS ====================*/
@@ -381,11 +380,6 @@ img {
 	transform: scale(1.02);
 	transition: transform 0.5s ease;
 	filter: grayscale(0);
-}
-
-.about__description {
-	text-align: center;
-	margin-bottom: var(--mb-2-5);
 }
 
 .about__info {
@@ -1208,122 +1202,6 @@ img {
 	}
 }
 
-/* intro-images animation */
-/* .intro-images {
-	-webkit-box-flex: 1;
-	-ms-flex: 1 1 40rem;
-	flex: 1 1 40rem;
-}
-
-#plant-left {
-	-webkit-animation: plant 1.5s ease infinite alternate;
-	animation: plant 1.5s ease infinite alternate;
-}
-
-#plant-right {
-	-webkit-animation: plant 1.5s ease infinite alternate 0.5s;
-	animation: plant 1.5s ease infinite alternate 0.5s;
-}
-
-#me {
-	-webkit-animation: me 1s ease infinite alternate;
-	animation: me 1s ease infinite alternate;
-	-webkit-transform-origin: bottom;
-	transform-origin: bottom;
-}
-
-#clock-arrow {
-	-webkit-animation: clock 1.5s infinite linear;
-	animation: clock 1.5s infinite linear;
-	transform-box: fill-box;
-	-webkit-transform-origin: bottom;
-	transform-origin: bottom;
-}
-
-@-webkit-keyframes me {
-	from {
-		-webkit-transform: rotateZ(-5deg);
-		transform: rotateZ(-5deg);
-	}
-	to {
-		-webkit-transform: rotateZ(5deg);
-		transform: rotateZ(5deg);
-	}
-}
-
-@keyframes me {
-	from {
-		-webkit-transform: rotateZ(-5deg);
-		transform: rotateZ(-5deg);
-	}
-	to {
-		-webkit-transform: rotateZ(5deg);
-		transform: rotateZ(5deg);
-	}
-}
-
-@-webkit-keyframes plant {
-	from {
-		-webkit-transform: translateY(0%);
-		transform: translateY(0%);
-	}
-	to {
-		-webkit-transform: translateY(-30%);
-		transform: translateY(-30%);
-	}
-}
-
-@keyframes plant {
-	from {
-		-webkit-transform: translateY(0%);
-		transform: translateY(0%);
-	}
-	to {
-		-webkit-transform: translateY(-30%);
-		transform: translateY(-30%);
-	}
-}
-
-@-webkit-keyframes clock {
-	from {
-		-webkit-transform: rotateZ(0deg);
-		transform: rotateZ(0deg);
-	}
-	to {
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-	}
-}
-
-@keyframes clock {
-	from {
-		-webkit-transform: rotateZ(0deg);
-		transform: rotateZ(0deg);
-	}
-	to {
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-	}
-}
-
-@media screen and (max-width: 1332px) {
-	.splash {
-		display: none;
-	}
-	svg {
-		width: 80%;
-	}
-}
-
-@media screen and (max-width: 754px) {
-	svg {
-		height: 60%;
-	}
-	.intro-images {
-		text-align: center;
-	}
-} */
-
 .type__writter {
 	background-color: var(--body-color);
 	color: var(--first-color);
@@ -1336,107 +1214,6 @@ img {
 	height: 35px;
 	color: var(--first-color);
 }
-
-/* me svg */
-#plant-left {
-	-webkit-animation: plant 1.5s ease infinite alternate;
-	animation: plant 1.5s ease infinite alternate;
-}
-
-#plant-right {
-	-webkit-animation: plant 1.5s ease infinite alternate 0.5s;
-	animation: plant 1.5s ease infinite alternate 0.5s;
-}
-
-#me {
-	-webkit-animation: me 1s ease infinite alternate;
-	animation: me 1s ease infinite alternate;
-	-webkit-transform-origin: bottom;
-	transform-origin: bottom;
-}
-
-#clock-arrow {
-	-webkit-animation: clock 1.5s infinite linear;
-	animation: clock 1.5s infinite linear;
-	transform-box: fill-box;
-	-webkit-transform-origin: bottom;
-	transform-origin: bottom;
-}
-
-@-webkit-keyframes me {
-	from {
-		-webkit-transform: rotateZ(-5deg);
-		transform: rotateZ(-5deg);
-	}
-	to {
-		-webkit-transform: rotateZ(5deg);
-		transform: rotateZ(5deg);
-	}
-}
-
-@keyframes me {
-	from {
-		-webkit-transform: rotateZ(-5deg);
-		transform: rotateZ(-5deg);
-	}
-	to {
-		-webkit-transform: rotateZ(5deg);
-		transform: rotateZ(5deg);
-	}
-}
-
-@-webkit-keyframes plant {
-	from {
-		-webkit-transform: translateY(0%);
-		transform: translateY(0%);
-	}
-	to {
-		-webkit-transform: translateY(-30%);
-		transform: translateY(-30%);
-	}
-}
-
-@keyframes plant {
-	from {
-		-webkit-transform: translateY(0%);
-		transform: translateY(0%);
-	}
-	to {
-		-webkit-transform: translateY(-30%);
-		transform: translateY(-30%);
-	}
-}
-
-@-webkit-keyframes clock {
-	from {
-		-webkit-transform: rotateZ(0deg);
-		transform: rotateZ(0deg);
-	}
-	to {
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-	}
-}
-
-@keyframes clock {
-	from {
-		-webkit-transform: rotateZ(0deg);
-		transform: rotateZ(0deg);
-	}
-	to {
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-	}
-}
-
-/* body {
-	margin: 0;
-	height: 100%;
-	background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
-	background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-} */
 
 /* new submit button css  */
 .link {
@@ -1488,12 +1265,11 @@ img {
 	transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
-
 /* hero__section__btn CSS */
 .hero__section__btn {
 	font-family: 'Poppins', sans-serif;
 	color: #111;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .hero__section__btn a {
@@ -1561,4 +1337,115 @@ img {
 .hero__section__btn .cta:active {
 	-webkit-transform: scale(0.96);
 	transform: scale(0.96);
+}
+
+/* Hero section: Ashiq Stylish gradient effect */
+
+.underline--magical {
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	font-family: 'Satisfy';
+	background-position: 0 88%;
+	-webkit-transition: background-size 0.25s ease-in;
+	transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+	background-size: 100% 88%;
+}
+
+/* new about section */
+.about__description .svg-wrap {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+.about__description a {
+	color: #404d5b;
+	text-decoration: none;
+	outline: none;
+}
+
+.about__description section {
+	position: relative;
+	z-index: 1; /* needed for setting pseudo-element z-index */
+	overflow: hidden;
+	backface-visibility: hidden;
+}
+
+.about__description section a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #404d5b;
+	vertical-align: bottom;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.about__description section a::before,
+.about__description section a::after {
+	pointer-events: none;
+	backface-visibility: hidden;
+	/* font-smoothing: antialiased; */
+}
+
+.about__description .link-svgline a svg.link-svgline {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	height: 15px;
+	transition: stroke-dashoffset 0.3s ease-in-out;
+	transform: translateY(-90%);
+	fill: none;
+	stroke: #b1d474;
+	stroke-width: 5;
+	stroke-dasharray: 400px;
+	stroke-dashoffset: 400px;
+}
+
+.about__description .link-svgline a:hover svg.link-svgline {
+	stroke-dashoffset: 0px;
+}
+
+.about__description .link-svgmarker a svg.link-svgline {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	height: 40px;
+	opacity: 0.5;
+	transition: stroke-dashoffset 0.3s ease-in-out;
+	transform: translateY(-100%);
+	fill: none;
+	stroke: #f0f567;
+	stroke-width: 15;
+	stroke-dasharray: 400px;
+	stroke-dashoffset: 400px;
+}
+
+.about__description .link-svgmarker a:hover svg.link-svgline {
+	stroke-dashoffset: 0px;
+}
+
+.about__description {
+	/* padding: 100px 50px; */
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+	color: rgb(0, 0, 0);
+
+	text-align: initial;
+	margin-bottom: var(--mb-2);
+
+	/* background-color: #7eb4e2; */
 }

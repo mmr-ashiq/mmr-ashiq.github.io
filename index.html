@@ -125,14 +125,10 @@
 					</div>
 
 					<div class="home__data">
-						<h1 class="home__title">Hi! I'am Ashiq</h1>
+						<h1 class="home__title">Hi! I'am <span class="underline--magical">Ashiq</span></h1>
 						<div class="type__writter">
 							<h1 id="text"></h1>
 						</div>
-						<p class="home__description"></p>
-						<!-- <a href="#contact" class="button button--flex">
-							Contact me <i class="uil uil-message"></i>
-						</a> -->
 
 						<!-- Button Research -->
 						<div class="hero__section__btn">
@@ -144,10 +140,7 @@
 								</svg>
 							</a>
 						</div>
-
-
 					</div>
-
 				</div>
 			</div>
 		</section>
@@ -160,12 +153,29 @@
 				<img src="./img/about.jpg" alt="My profile image" class="about__img" />
 
 				<div class="about__data">
-					<p class="about__description">
+					<!-- <p class="about__description">
 						I am enthusiastic about Programming and Software Development.
 						Nowadays, I'm mostly working on enhancing user-experience through
 						React js, Typescript, Gatsby etc. For Backend part i use Node js
 						and express js.
-					</p>
+					</p> -->
+					<div class="about__description">
+						<div class="svg-wrap">
+							<svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
+							  <path id="svg_line" d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571"></path>
+							</svg>
+							<svg viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
+							  <path id="svg_marker" d="m 3.518915,27.827324 c 55.429038,4.081 111.581115,5.822 167.117815,2.867 22.70911,-1.208 45.39827,-0.601 68.126,-0.778 28.38172,-0.223 56.76078,-1.024 85.13721,-1.33 24.17378,-0.261 48.4273,0.571 72.58114,0.571"></path>
+							</svg>
+						  </div>
+						  <section class="link-svgline">
+							<p>I am enthusiastic about Programming and <a href="#">Software Development.<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a> Nowadays, I'm mostly working on <a href="#">enhancing user-experience<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a></p>
+						  </section>
+						  <section class="link-svgmarker">
+							<p>through <a href="#">React js, Typescript, Gatsby<svg class="link-svgline"><use xlink:href="#svg_marker"></use></svg></a> etc. For Backend part i use <a href="#">Node js and express js.<svg class="link-svgline"><use xlink:href="#svg_marker"></use></svg></a></p>
+						  </section>
+					</div>
+
 					<div class="about__info">
 						<div>
 							<span class="about__info-title">01+</span>
@@ -184,7 +194,7 @@
 						</div>
 					</div>
 					<!-- download=""
-							need to add this a tag when i will add a pdf
+							need to add this <a> tag when i will add a pdf. and file location into the href
 						-->
 					<div class="about__buttons">
 						<a href="#" class="button button--flex">
@@ -395,7 +405,7 @@
 								</h3>
 								<span class="qualification__subtitle">Daffodil International University</span>
 								<div class="qualification__calender">
-									<i class="uil uil-calendar-alt"></i> May 2019 - present
+									<i class="uil uil-calendar-alt"></i> Apr 2019 - present
 								</div>
 							</div>
 
@@ -472,6 +482,7 @@
 								<a href="https://www.hackerrank.com/certificates/f76f9e7af979" target="_blank"
 									rel="noopener">Java (Basic)</a>
 							</h3>
+
 							<span class="qualification__subtitle">hackerrank</span>
 							<div class="qualification__calender">
 								<i class="uil uil-calendar-alt"></i> July 2020
@@ -510,6 +521,45 @@
 							<h3 class="qualification__title">
 								<a href="https://www.linkedin.com/posts/mmr-ashiq_cpc-diu-oop-activity-6727171456654045185-gNYa"
 									target="_blank" rel="noopener">Object-Oriented Programming Concepts</a>
+							</h3>
+							<span class="qualification__subtitle">CPC @DIU</span>
+							<div class="qualification__calender">
+								<i class="uil uil-calendar-alt"></i> Apr 2020 - Jun 2020
+							</div>
+						</div>
+
+						<div>
+							<span class="qualification__rounder"></span>
+							<span class="qualification__line"></span>
+						</div>
+					</div>
+
+					<!--==================== Certification 4 ====================-->
+					<div class="qualification__data">
+						<div></div>
+
+						<div>
+							<span class="qualification__rounder"></span>
+							<span class="qualification__line"></span>
+						</div>
+
+						<div>
+							<h3 class="qualification__title">
+								<a href="https://www.hackerrank.com/certificates/7b2c81b8139a" target="_blank"
+									rel="noopener">JavaScript (Basic)</a>
+							</h3>
+							<span class="qualification__subtitle">Google @Coursera</span>
+							<div class="qualification__calender">
+								<i class="uil uil-calendar-alt"></i> Jan 2020 - Feb 2020
+							</div>
+						</div>
+					</div>
+
+					<div class="qualification__data">
+						<div>
+							<h3 class="qualification__title">
+								<a href="https://www.hackerrank.com/certificates/079b9232548d" target="_blank"
+									rel="noopener">React (Basic)</a>
 							</h3>
 							<span class="qualification__subtitle">CPC @DIU</span>
 							<div class="qualification__calender">
@@ -793,7 +843,7 @@
 								value="Contact Form Submission" />
 						</div>
 					</div>
-					<button class="submit__btn cta"><span>Submit</span>
+					<button class="submit__btn"><span>Submit</span>
 					</button>
 				</form>
 			</div>
