@@ -1438,7 +1438,6 @@ img {
   background-attachment: fixed;
 } */
 
-
 /* new submit button css  */
 .link {
 	font-family: 'Poppins', sans-serif;
@@ -1458,12 +1457,11 @@ img {
 	color: #fff;
 	font-weight: 700;
 	font-size: 15px;
-	background-color: #9057E0;
+	background-color: #9057e0;
 	padding: 17px 60px;
 	border-radius: 5px;
 	margin: 0 auto;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
 }
 
 .submit__btn span {
@@ -1478,7 +1476,7 @@ img {
 	top: 0;
 	height: 490%;
 	width: 140%;
-	background: #6200EB;
+	background: #6200eb;
 	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 	-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
@@ -1490,3 +1488,77 @@ img {
 	transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
+
+/* hero__section__btn CSS */
+.hero__section__btn {
+	font-family: 'Poppins', sans-serif;
+	color: #111;
+	margin-top: 30px;
+}
+
+.hero__section__btn a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.hero__section__btn .cta {
+	position: relative;
+	margin: auto;
+	padding: 19px 22px;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.hero__section__btn .cta:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 28px;
+	background: rgba(255, 171, 157, 0.5);
+	width: 56px;
+	height: 56px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.hero__section__btn .cta span {
+	position: relative;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 900;
+	letter-spacing: 0.15em;
+	/* text-transform: uppercase; */
+	vertical-align: middle;
+}
+
+.hero__section__btn .cta svg {
+	position: relative;
+	top: 0;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #111;
+	stroke-width: 2;
+	-webkit-transform: translateX(-5px);
+	transform: translateX(-5px);
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.hero__section__btn .cta:hover:before {
+	width: 100%;
+	background: #ffab9d;
+}
+
+.hero__section__btn .cta:hover svg {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.hero__section__btn .cta:active {
+	-webkit-transform: scale(0.96);
+	transform: scale(0.96);
+}
