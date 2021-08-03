@@ -371,14 +371,17 @@ img {
 	justify-self: center;
 	align-self: center;
 	filter: grayscale(100%);
-	border: 3px solid rgb(32, 224, 224);
+	border: 3px solid rgb(116, 242, 206);
 	overflow: hidden;
+
+
+	transition: opacity 0.35s, transform 0.35s;
 }
 
 .about__img:hover {
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	transform: scale(1.02);
-	transition: transform 0.5s ease;
+	-webkit-transform: scale3d(2,2,1);
+	transform: scale(1.03);
 	filter: grayscale(0);
 }
 
