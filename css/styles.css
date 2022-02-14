@@ -499,7 +499,7 @@ img {
 }
 
 .skills__redux{
-	width: 65%;
+	width: 35%;
 }
 
 .skills__strapi {
@@ -507,7 +507,7 @@ img {
 }
 
 .skills__mongodb {
-	width: 65%;
+	width: 60%;
 }
 
 .skills__figma {
