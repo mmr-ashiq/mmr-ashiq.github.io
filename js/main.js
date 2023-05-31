@@ -189,7 +189,7 @@ themeButton.addEventListener('click', () => {
 //typeWritter effect
 const textDisplay = document.getElementById('text');
 const phrases = [
-	'MERN Stack Developer',
+	'Software Engineer @Bit Mascot',
 	'Open Source Enthusiast',
 	'Backend fanatic',
 ];
